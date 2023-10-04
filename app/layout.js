@@ -1,3 +1,5 @@
+import Carosel from './components/Carosel'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import './globals.css'
 
@@ -11,6 +13,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Header />
       <body className='bg-[#f1f3f6]'>{children}</body>
+      <Carosel />
+      <Footer /> 
     </html>
   )
 }
