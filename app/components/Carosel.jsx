@@ -6,12 +6,23 @@ import Container from './assets/Container';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
+const caroselData = [
+  {
+    img: '',
+    alt: '',
+    href: '',
+  },
+];
+
 const Carosel = () => (
   <Container>
     <AutoPlaySwipeableViews>
-      <div className='bg-green-300 h-96'>slide n°1</div>
-      <div className='bg-green-600 h-96'>slide n°2</div>
-      <div className='bg-green-900 h-96'>slide n°3</div>
+      <div className='w-[1440px] object-cover h-[420px]'>
+        <img src='/slider/4X4Meal_En_EG14_0208.jpg' alt='e2e3' />
+      </div>
+      <div className='w-[1440px] object-cover h-[420px]'>
+        <img src='/slider/Chililime_En_EGY_1809.jpg' alt='e2e3' />
+      </div>
     </AutoPlaySwipeableViews>
   </Container>
 );
