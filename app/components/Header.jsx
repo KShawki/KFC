@@ -64,18 +64,18 @@ const Header = () => {
         <nav
           id='navbar'
           className='flex flex-row h-[72px] items-center justify-start gap-3 divide-x-1'>
-            <img src='/icons/aside.svg' alt='open aside' />
-            <img src='/icons/kfc-logo.svg' />
-            <div className='icons flex gap-2'>
-              {HeaderIcons.map((item) => (
-                <Button
-                  href={item.href}
-                  img={item.img}
-                  title={item.title}
-                  alt={item.alt}
-                />
-              ))}
-            </div>
+          <img src='/icons/aside.svg' alt='open aside' />
+          <img src='/icons/kfc-logo.svg' />
+          <div className='icons flex gap-2'>
+            {HeaderIcons.map((item) => (
+              <Button
+                href={item.href}
+                img={item.img}
+                title={item.title}
+                alt={item.alt}
+              />
+            ))}
+          </div>
           <div className='location border-l-3 border-gray-900 ml-2'>
             <SelectLocation />{' '}
           </div>

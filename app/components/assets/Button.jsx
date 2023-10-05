@@ -1,9 +1,9 @@
 'use client';
 import Link from 'next/link';
 
-const Button = ({ href, title, alt, img = 'none' }) => {
+const Button = ({ href, title, alt, img, index }) => {
   return (
-    <div key={title}>
+    <div key={index}>
       <Link href={href}>
         <button className='flex items-center justify-center border-[2.5px] rounded-xl px-[6px] py-1.5'>
           {img !== 'none' && (

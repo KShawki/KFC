@@ -23,7 +23,8 @@ const Footer = () => {
   return (
     <>
       <Container>
-        <footer className='bg-[#393f52] flex flex-col items-center gap-[2.5rem] p-[2.5rem] px-[2.5rem] pb-[4rem]'>
+        {/* delete mt-10 */}
+        <footer className='bg-[#393f52] flex flex-col items-center gap-[2.5rem] p-[2.5rem] px-[2.5rem] pb-[4rem] mt-10'>
           {/* Logo */}
           <div>
             <img
@@ -41,10 +42,10 @@ const Footer = () => {
             </p>
           </div>
           {/* Links */}
-          <ul className='w-[100%] flex text-white flex-row justify-between px-16'>
+          <ul className='w-[80%] flex text-white flex-row justify-between px-16'>
             {pages.map((page) => (
               <Link href={page.href} key={page.title}>
-                <li className='text-xl font-400 text-[1.4rem]'>{page.title}</li>
+                <li className='text-xl font-400 text-[1.5rem]'>{page.title}</li>
               </Link>
             ))}
           </ul>
@@ -62,8 +63,15 @@ const Footer = () => {
           </div>
           {/* Copyrights */}
           <div>
-            <p className='text-[1.4rem] tracking-tight font-100 text-white opacity-50'>© KFC, Inc. All rights reserved.</p>
+            <p className='text-[1.4rem] tracking-tight font-100 text-white opacity-50'>
+              © KFC, Inc. All rights reserved.
+            </p>
           </div>
+          <img
+            src='/icons/kfc-footer.svg'
+            className='-pb-10 -mb-16'
+            alt='svg'
+          />
         </footer>
       </Container>
     </>

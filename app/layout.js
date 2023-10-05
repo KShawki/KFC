@@ -1,4 +1,5 @@
 import Carosel from './components/Carosel'
+import ContactLessDelivery from './components/ContactlessDelivery'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import './globals.css'
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <Header />
       <body className='bg-[#f1f3f6]'>{children}</body>
       <Carosel />
+      <ContactLessDelivery /> 
       <Footer /> 
     </html>
   )
