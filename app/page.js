@@ -1,8 +1,9 @@
-import Carosel from './components/Carosel'
+import Header from "./components/header/Header";
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
+      <Header />
     </main>
   )
 }
