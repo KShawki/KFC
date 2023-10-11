@@ -1,8 +1,3 @@
-import Banners from './components/Banners'
-import Carosel from './components/Carosel'
-import ContactLessDelivery from './components/ContactlessDelivery'
-import Footer from './components/Footer'
-import Header from './components/Header'
 import './globals.css'
 
 export const metadata = {
@@ -13,12 +8,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Header />
+      <h1>Hala, World!</h1>
+      {/* <Header />
       <body className='bg-[#f1f3f6]'>{children}</body>
       <Carosel />
       <Banners />
       <ContactLessDelivery /> 
-      <Footer /> 
+      <Footer />  */}
     </html>
   )
 }
