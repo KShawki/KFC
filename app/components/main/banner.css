@@ -1,0 +1,39 @@
+section.banner {
+  display: flex;
+  justify-content: space-between;
+  grid-column-gap: 4.2rem;
+  grid-column-gap: 3.2rem;
+  -webkit-column-gap: 3.2rem;
+  column-gap: 3.2rem;
+  grid-row-gap: 4rem;
+  grid-row-gap: 4rem;
+  row-gap: 4rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.banner-section {
+  flex-basis: 47.8%;
+  max-height: 37rem;
+  overflow: hidden;
+  aspect-ratio: 566/350;
+  height: fit-content;
+}
+
+.banner-section a {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--clr-light-100);
+  box-shadow: 0 2.17631px 7.61708px rgba(155, 204, 244, 0.241231);
+  border-radius: 1.6rem;
+  overflow: hidden;
+  height: 100%;
+}
+
+.banner-section a img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}

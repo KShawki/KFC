@@ -25,9 +25,7 @@ const Card = ({ img, desc }) => {
   return (
     <article className='card'>
       <img src={img} width={56} alt={desc} />
-      <p className='' style={{ fontSize: '11px', lineHeight: '1.3' }}>
-        {desc}
-      </p>
+      <p style={{ fontSize: '11px', lineHeight: '1.3' }}>{desc}</p>
     </article>
   );
 };
@@ -43,13 +41,10 @@ export default function Contact() {
 
       <div className='flex contactless'>
         <article className='card special-card'>
-          <img
-            src='/contactless-delivery/banner.png'
-            
-          />
+          <img src='/contactless-delivery/banner.png' />
         </article>
-        {data.map((item) => (
-          <div className='' key={item.img}>
+        {data.map((item, index) => (
+          <div key={index}>
             <Card img={item.img} desc={item.desc} />
           </div>
         ))}

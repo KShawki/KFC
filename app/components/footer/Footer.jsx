@@ -42,9 +42,9 @@ const Footer = () => {
         </div>
         <div className='social'>
           <ul>
-            {social.map((item) => {
+            {social.map((item, index) => {
               return (
-                <li>
+                <li key={index}>
                   <a href={item.href} target='_blank'>
                     <img src={item.icon} alt='' width={18} />
                   </a>
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
         <div className='copyrights'>©KFC, Inc. All rights reserved.</div>
         <div className='footer-badge'>
-          <img src="/icons/kfc-footer.svg" alt="" />
+          <img src='/icons/kfc-footer.svg' alt='' />
         </div>
       </footer>
     </>
