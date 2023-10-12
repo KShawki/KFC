@@ -1,0 +1,32 @@
+.contactless {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  grid-gap: 2rem;
+  gap: 2rem;
+  margin-top: 1.6rem;
+}
+
+article.card {
+  width: 140px;
+  height: 170px;
+  padding: 1.6rem;
+  text-align: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.special-card {
+  width: 260px !important;
+}
+
+.special-card img {
+  width: 250px;
+}
