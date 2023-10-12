@@ -1,0 +1,49 @@
+main.container {
+  padding: clamp(5rem, calc(5rem + 0.5vw + 0.1vh), 4rem)
+    clamp(12.5rem, calc(12.5rem + 0.5vw + 0.1vh), 2rem) 0;
+}
+
+.title {
+  align-items: flex-start;
+}
+
+.title h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--clr-dark-400);
+}
+
+.title img {
+  width: 2rem;
+  margin-left: 10px;
+}
+
+.title-container {
+  align-items: end;
+}
+
+.title h3::after {
+  width: 32px;
+  content: '';
+  display: block;
+  border-bottom: 2px solid #e4002b;
+  margin-top: 0px;
+}
+
+.view-all {
+  display: flex;
+  gap: 10px;
+}
+
+.view-all h4 {
+  font-size: 1.6rem;
+  color: #007aff;
+  cursor: pointer;
+}
+
+/* to be removed */
+.media-grid {
+  height: 500px;
+  margin-top: 12px;
+}

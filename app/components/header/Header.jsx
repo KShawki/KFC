@@ -4,7 +4,7 @@ import './header.css';
 const Header = () => {
   return (
     <header className='' id='header'>
-      <nav className='container nav'>
+      <nav className='container nav '>
         {/* Aside Bar */}
         <div className='flex'>
           <img src='/icons/aside.svg' alt='' width={32} />
