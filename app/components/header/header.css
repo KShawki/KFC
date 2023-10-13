@@ -19,17 +19,6 @@ header nav.container {
   padding: 1rem 3rem;
 }
 
-nav .orderModes {
-  flex-shrink: 0;
-}
-
-nav .orderModes .MuiTabs-root {
-  overflow: hidden;
-  min-height: 48px;
-  margin-top: 0.5rem;
-  padding-inline: 0.5rem;
-}
-
 .divider {
   margin-block: -1rem;
 }
@@ -43,7 +32,6 @@ nav .orderModes .MuiTabs-root {
 }
 
 nav .addressSelector {
-  min-width: 600px;
   display: flex;
   flex-direction: column;
   grid-gap: 0.4rem;
@@ -154,7 +142,6 @@ a .addressContent h3.bold {
     flex-direction: row;
     grid-gap: 0.4rem;
     gap: 0.4rem;
-    min-width: 0;
     cursor: pointer;
   }
 

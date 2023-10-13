@@ -1,0 +1,56 @@
+.orderModes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 6px 12px;
+  overflow: hidden;
+  position: relative;
+  font-size: 0.875rem;
+  max-width: 512px;
+  min-width: 72px;
+  box-sizing: border-box;
+  min-height: 48px;
+  text-align: center;
+  flex-shrink: 0;
+  font-family: Rubik, Roboto, sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  white-space: normal;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+
+.btn-menu {
+  justify-content: center;
+  border: 2.5px solid gray;
+}
+
+.orderModes button {
+  min-width: 100px;
+  border: 2px solid #d3d3d3;
+  color: var(--clr-dark-400-80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  border-radius: 8px;
+  gap: 8px;
+  padding: 0 3px;
+  transition: 0.2s;
+}
+
+.orderModes button:hover {
+  border: 2px solid #535353;
+  transition: 0.2s;
+}
+
+.orderModes button:first-child {
+  color: #e4002b;
+  border: 2px solid #e4002b;
+}
+
+.orderModes button span {
+  font-size: 1.05rem;
+  font-weight: 600;
+}

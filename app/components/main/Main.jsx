@@ -1,5 +1,6 @@
 'use client';
 import Banners from './Banners';
+import Bestsellers from './Bestsellers';
 import Contact from './Contactless';
 import Heading from './Heading';
 import './main.css';
@@ -13,6 +14,7 @@ const Main = () => {
         <div className='pagination'></div>
       </div>
 
+      <Bestsellers />
       <Banners />
       <Contact />
     </main>

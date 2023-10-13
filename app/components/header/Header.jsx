@@ -1,4 +1,5 @@
 'use client';
+import OrderMode from './OrderModes';
 import './header.css';
 
 const Header = () => {
@@ -14,19 +15,8 @@ const Header = () => {
           <img src='/icons/kfc-logo.svg' alt='' width={64} />
         </div>
         {/* Orders Mode */}
-        <div className='orderModes flex'>
-          <button>
-            <img src='/icons/delivery_grey.png' alt='delivery' width={30} />
-            <span>Delivery</span>
-          </button>
-          <button>
-            <img src='/icons/delivery_grey.png' alt='delivery' width={30} />
-            <span>Self-Pickup</span>
-          </button>
-          <button>
-            <img src='/icons/delivery_grey.png' alt='delivery' width={30} />
-            <span>Dine-In</span>
-          </button>
+        <div className='flex items-center' >
+          <OrderMode />
         </div>
 
         {/* Divider */}
