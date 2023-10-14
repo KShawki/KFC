@@ -1,0 +1,47 @@
+.productList {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  grid-gap: 4rem;
+  gap: 4rem;
+  padding: 2rem 0;
+}
+
+.productList a div {
+  position: relative;
+  width: 23.5rem;
+  margin-right: 0;
+  border-radius: 1.7rem;
+  overflow: hidden;
+}
+
+.productList a div img {
+  width: 100%; /* or any custom size */
+  height: 100%;
+  object-fit: contain;
+}
+
+.productList a div .productListTitle {
+  position: absolute;
+  display: flex;
+  bottom: auto;
+  top: 9rem;
+  color: #fff;
+  width: 100%;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  padding-inline: 1.5rem;
+  align-items: center;
+  padding-block: 0.2rem;
+}
+
+.productList a div .productListTitle::after {
+  position: absolute;
+  content: '';
+  width: 4.5rem;
+  height: 0.17rem;
+  background: #ffffff8b;
+  border-radius: 1.7rem;
+  bottom: 1rem;
+}
