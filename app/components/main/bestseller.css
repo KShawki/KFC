@@ -36,12 +36,12 @@
   padding-block: 0.2rem;
 }
 
-.productList a div .productListTitle::after {
+.productList a div .productListTitle:after {
   position: absolute;
   content: '';
   width: 4.5rem;
   height: 0.17rem;
   background: #ffffff8b;
   border-radius: 1.7rem;
-  bottom: 1rem;
+  bottom: 0rem;
 }

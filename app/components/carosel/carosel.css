@@ -1,0 +1,56 @@
+#slider {
+  width: 100%;
+  aspect-ratio: 8;
+  background-color: red;
+}
+
+.photo-slider {
+  min-height: clamp(30rem, 47vh, 42rem);
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin: 0 auto;
+}
+
+.swiper-pagination {
+  margin-bottom: 15px;
+}
+
+span.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255) ;
+  opacity: 0.65;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: 0.1s ;
+}
+
+/* Update the active pagination styles */
+span.swiper-pagination-bullet-active {
+  opacity: 0.95; /* 100% opacity for the active pagination */
+  width: 25px; /* Set the width to 5px */
+  height: 10px; /* Set the height to 5px */
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+
+}
