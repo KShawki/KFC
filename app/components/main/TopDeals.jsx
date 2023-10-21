@@ -80,7 +80,25 @@ const TopDeal = () => {
               {item.description}
             </div>
             {/* Price */}
+            <div className="price">
+              <div className="containerr">
+                <div className='priceTitle'>
+                  <span className='oldPrice'>{item.oldPrice}</span>
+                  <span className='offerPrice'>{item.price}</span>
+                </div>
+                {/* TO BE MODIFIED */}
+                <div className='customize'>
+                  <span>Customize</span>
+                  <div className='img'>
+                    <img src="/icons/left-arrow-fav.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
             {/* Add To Cart */}
+            <div className='addToCart'>
+              Add To Cart
+            </div>
           </div>
         ))}
       </div>

@@ -27,6 +27,80 @@
   font-size: 1.2rem;
 }
 
+.top-deal-card .price {
+  grid-area: price;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  flex-wrap: wrap;
+  grid-gap: 0.5rem;
+  gap: 0.5rem;
+  justify-self: start;
+}
+
+.top-deal-card .price .containerr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  min-height: 3rem;
+  justify-content: space-between;
+}
+
+.top-deal-card .price .priceTitle {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 0.5rem;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.top-deal-card .price .priceTitle .oldPrice {
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.top-deal-card .price .priceTitle .offerPrice {
+  font-size: 1.3rem;
+  color: var(--theme-procuct-price-color);
+}
+
+.top-deal-card .price .customize {
+  width: auto;
+  grid-area: customize;
+  text-decoration: none;
+  color: var(--theme-product-blue-color);
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  grid-gap: 0.4rem;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+
+.top-deal-card .price .customize .img {
+  display: flex;
+  background-color: currentColor;
+  border: 0.1rem solid;
+  border-radius: 0.6rem;
+}
+
+.top-deal-card .price .customize .img img {
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 1px;
+}
+
+.addToCart {
+  grid-area: addtocart;
+  width: 11.5rem;
+  height: 3.5rem;
+  justify-self: flex-end;
+}
+
 @media (min-width: 1024px) {
   .topDeals-container {
     padding: 2rem 0;
@@ -91,6 +165,7 @@
   }
 
   .top-deal-card div.description {
+    min-height: 40px;
     line-height: 1.4rem;
     align-self: flex-start;
     text-align: center;
@@ -98,5 +173,51 @@
     width: 100%;
     margin: 1rem 0;
     white-space: normal;
+  }
+
+  .top-deal-card .price {
+    justify-self: center;
+    background: var(--theme-product-tile-box-bg);
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    margin-bottom: 1.5rem;
+    white-space: nowrap;
+  }
+
+  .top-deal-card .price .priceTitle {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .top-deal-card .price .priceTitle .oldPrice {
+    color: var(--theme-procuct-price-color);
+    opacity: 0.7;
+    text-decoration: line-through;
+  }
+
+  .top-deal-card .price .priceTitle .offerPrice {
+    font-size: 1.2rem;
+    display: flex;
+    grid-gap: 0.5rem;
+    gap: 0.5rem;
+    align-items: flex-end;
+    white-space: nowrap;
+  }
+
+  .top-deal-card .price .customize {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 0.7rem 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .addToCart {
+    width: 14rem;
+    height: 3.6rem;
+    justify-self: center !important;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    position: absolute;
   }
 }
