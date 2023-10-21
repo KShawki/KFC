@@ -3,7 +3,7 @@ import './main.css';
 
 const Heading = (props) => {
   return (
-    <div className='flex  title-container items-center justify-between'>
+    <div className='flex  title-container items-center justify-between' style={{marginBottom: "12px"}}>
       <div className='title flex items-center jusitfy-between'>
         <h3>{props.title}</h3>
         <img src={props.img} alt='' />

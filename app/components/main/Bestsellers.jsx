@@ -10,7 +10,7 @@ const items = [
 
 const Bestsellers = () => {
   return (
-    <section style={{ margin: '24px 0' }}>
+    <section>
       <Heading
         title='Bestsellers'
         img='/icons/best-sellers.png'

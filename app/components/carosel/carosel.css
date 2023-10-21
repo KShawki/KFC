@@ -40,13 +40,13 @@ span.swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  transition: 0.1s ;
+  transition: 0.05s ;
 }
 
 /* Update the active pagination styles */
 span.swiper-pagination-bullet-active {
   opacity: 0.95; /* 100% opacity for the active pagination */
-  width: 25px; /* Set the width to 5px */
+  width: 20px; /* Set the width to 5px */
   height: 10px; /* Set the height to 5px */
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
