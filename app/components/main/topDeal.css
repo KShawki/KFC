@@ -101,6 +101,16 @@
   justify-self: flex-end;
 }
 
+.addToCart button {
+  color: #e4002b;
+  border: 1px solid rgba(228, 0, 43, 0.5);
+  box-shadow: 0px 11.5338px 11.5338px rgba(228, 0, 43, 0.1);
+  border-color: #e4002b;
+  border-width: 0.2rem;
+  background-color: #ffffff;
+  padding: 5px 15px;
+}
+
 @media (min-width: 1024px) {
   .topDeals-container {
     padding: 2rem 0;
@@ -217,7 +227,39 @@
     height: 3.6rem;
     justify-self: center !important;
     -webkit-transform: translateY(50%);
-    transform: translateY(50%);
+    transform: translateY(30%);
+    transform: translateX(30%);
     position: absolute;
+  }
+
+  .addToCart button {
+    
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+    font-size: 1.2rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: Rubik, Roboto, sans-serif;
+    font-weight: 700;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    justify-content: center;
+    text-decoration: none;
   }
 }

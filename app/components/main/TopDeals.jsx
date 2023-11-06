@@ -97,7 +97,9 @@ const TopDeal = () => {
             </div>
             {/* Add To Cart */}
             <div className='addToCart'>
-              Add To Cart
+              <button>
+                Add To Cart
+              </button>
             </div>
           </div>
         ))}
